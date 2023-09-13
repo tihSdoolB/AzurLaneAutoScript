@@ -87,9 +87,13 @@ class ConnectionAttr:
             self.serial = '127.0.0.1:58526'
             # Emulator_ControlMethod only support ADB, uiautomator2 currently
             if self.config.Emulator_ScreenshotMethod != 'uiautomator2' \
-                    or self.config.Emulator_ControlMethod != 'uiautomator2':
+                    and self.config.Emulator_ScreenshotMethod != 'ADB' \
+                    and self.config.Emulator_ScreenshotMethod != 'WSA':
                 with self.config.multi_set():
                     self.config.Emulator_ScreenshotMethod = 'uiautomator2'
+            if self.config.Emulator_ControlMethod != 'uiautomator2' \
+                    and self.config.Emulator_ControlMethod != 'ADB':
+                with self.config.multi_set():
                     self.config.Emulator_ControlMethod = 'uiautomator2'
         if self.is_over_http:
             if self.config.Emulator_ScreenshotMethod not in ["ADB", "uiautomator2", "aScreenCap"] \
