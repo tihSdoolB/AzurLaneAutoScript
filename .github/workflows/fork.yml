@@ -14,5 +14,9 @@ jobs:
       - uses: zwping/fork-sync@v1.6.5
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
+          base: master
+          head: master
+          repo: AzurLaneAutoScript
           owner: LmeSzinc
           auto_approve: true
+          ignore_fail: true
