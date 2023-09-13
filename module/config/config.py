@@ -266,6 +266,7 @@ class AzurLaneConfig(ConfigUpdater, ManualConfig, GeneratedConfig, ConfigWatcher
         limited = set()
 
         def limit_next_run(tasks, limit):
+            return
             for task in tasks:
                 if task in limited:
                     continue
