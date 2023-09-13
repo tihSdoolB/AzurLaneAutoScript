@@ -110,6 +110,7 @@ class ConnectionAttr:
             raise RequestHumanTakeover
         if self.is_wsa:
             self.serial = '127.0.0.1:58526'
+            # Emulator_ControlMethod only support ADB, uiautomator2 currently
             if self.config.Emulator_ScreenshotMethod != 'uiautomator2' \
                     or self.config.Emulator_ControlMethod != 'uiautomator2':
                 with self.config.multi_set():
