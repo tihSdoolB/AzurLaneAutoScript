@@ -1,3 +1,5 @@
+import time
+
 from lxml import etree
 
 from module.device.method.adb import Adb
@@ -33,6 +35,7 @@ class AppControl(Adb, WSA, Uiautomator2):
             self.app_start_uiautomator2()
         else:
             self.app_start_adb()
+        time.sleep(5)
 
     def app_stop(self):
         method = self.config.Emulator_ControlMethod
@@ -41,6 +44,7 @@ class AppControl(Adb, WSA, Uiautomator2):
             self.app_stop_uiautomator2()
         else:
             self.app_stop_adb()
+        time.sleep(5)
 
     def dump_hierarchy(self) -> etree._Element:
         """
