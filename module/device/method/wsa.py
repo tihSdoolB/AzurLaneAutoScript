@@ -51,6 +51,7 @@ def retry(func):
             except GameNotRunningError as e:
                 logger.error(e)
                 logger.error('Application is not running, please run application before using the script')
+                raise GameNotRunningError
 
                 def init():
                     pass

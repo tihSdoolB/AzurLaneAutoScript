@@ -64,7 +64,8 @@ class AzurLaneAutoScript:
 
     def run(self, command):
         try:
-            self.device.screenshot()
+            if command != 'restart':
+                self.device.screenshot()
             self.__getattribute__(command)()
             return True
         except TaskEnd:
@@ -72,6 +73,7 @@ class AzurLaneAutoScript:
         except GameNotRunningError as e:
             logger.warning(e)
             self.config.task_call('Restart')
+            time.sleep(10)
             return True
         except (GameStuckError, GameTooManyClickError) as e:
             logger.error(e)
