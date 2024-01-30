@@ -690,7 +690,7 @@
       "event_20211028_tw": "復刻光與影的鳶尾之華",
       "event_20211111_cn": "The Flame-Touched Dagger Rerun",
       "event_20211125_cn": "World-spanning Arclight Rerun",
-      "event_20211229_cn": "Tower of Transcendence",
+      "event_20211229_cn": "Tower of Transcendence Rerun",
       "event_20220210_cn": "Northern Overture Rerun",
       "event_20220224_cn": "Abyssal Refrain",
       "event_20220310_tw": "復刻斯圖爾特的硝煙",
@@ -711,6 +711,7 @@
       "event_20230914_cn": "Effulgence Before Eclipse",
       "event_20231026_cn": "Tempesta and the Fountain of Youth",
       "event_20231123_cn": "The Ninja Scrolls: Azur Flash",
+      "event_20231221_cn": "Light-Chasing Sea of Stars",
       "raid_20200624": "Air Raid Drills with Essex Rerun",
       "raid_20210708": "Cross Wave rerun",
       "raid_20220127": "Mystery Investigation",
@@ -732,9 +733,11 @@
       "war_archives_20200806_cn": "archives The Enigma and the Shark",
       "war_archives_20200820_cn": "archives Scherzo of Iron and Blood",
       "war_archives_20200903_cn": "archives Stars of the Shimmering Fjord",
+      "war_archives_20200917_cn": "archives Dreamwakers Butterfly",
       "war_archives_20201029_cn": "archives Universe in Unison",
       "war_archives_20201229_cn": "archives Inverted Orthant",
       "war_archives_20210325_cn": "archives Ashen Simulacrum",
+      "war_archives_20210527_cn": "archives Mirror Involution",
       "war_archives_20210624_cn": "archives Swirling Cherry Blossoms",
       "war_archives_20210819_cn": "archives Microlayer Medley",
       "war_archives_20211014_cn": "archives Crescendo of Polaris",
@@ -1390,6 +1393,26 @@
     "FeedFilter": {
       "name": "Snack Filter",
       "help": "Generally does not need to be modified or re-arranged but can do so if desired"
+    }
+  },
+  "BuyFurniture": {
+    "_info": {
+      "name": "Event furniture Settings",
+      "help": "Buy time-limited furniture from dorm furniture shop during the event"
+    },
+    "Enable": {
+      "name": "Buy event furniture",
+      "help": ""
+    },
+    "BuyOption": {
+      "name": "Buy Option",
+      "help": "buy set: buy one piece for each piece of furniture; buy all: Buy all furniture. Both buy options will remove the set of furniture from the forefront of the store. If buy set, remaining furniture will need to be manually buy. Difference in furniture price between the two options is not significant, Recommended to use buy all. This operation will not buy diamond furniture",
+      "set": "set",
+      "all": "all"
+    },
+    "LastRun": {
+      "name": "Last Check Time",
+      "help": "The time of the last check is recorded here to prevent the task from running repeatedly. Check interval is 7 days. This value is automatically recorded and generally does not need to be modified."
     }
   },
   "Meowfficer": {

@@ -632,7 +632,7 @@
     },
     "Campaign": {
       "Name": "D3",
-      "Event": "war_archives_20201229_cn",
+      "Event": "war_archives_20210527_cn",
       "Mode": "normal",
       "UseClearMode": true,
       "UseFleetLock": true,
@@ -1255,6 +1255,11 @@
       "Collect": true,
       "Feed": true,
       "FeedFilter": "20000 > 10000 > 5000 > 3000 > 2000 > 1000"
+    },
+    "BuyFurniture": {
+      "Enable": false,
+      "BuyOption": "all",
+      "LastRun": "2020-01-01 00:00:00"
     },
     "Storage": {
       "Storage": {}

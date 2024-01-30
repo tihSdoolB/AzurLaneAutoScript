@@ -672,13 +672,13 @@
       "event_20201126_cn": "假日航線",
       "event_20201229_cn": "復刻-負象限作戰",
       "event_20210121_cn": "復刻神聖的悲喜劇",
-      "event_20210225_cn": "破曉冰華",
+      "event_20210225_cn": "復刻破曉冰華",
       "event_20210225_tw": "北境序曲",
       "event_20210325_cn": "復刻箱庭療法",
       "event_20210415_tw": "復刻圍剿施佩伯爵",
       "event_20210422_cn": "復興的讚美詩",
       "event_20210429_tw": "復刻墨染的鋼鐵之花",
-      "event_20210527_cn": "鏡位螺旋",
+      "event_20210527_cn": "復刻鏡位螺旋",
       "event_20210527_tw": "微層混合",
       "event_20210610_tw": "復刻夜幕下的歸途",
       "event_20210624_cn": "復刻-浮櫻影華",
@@ -703,14 +703,15 @@
       "event_20220818_cn": "遠匯點作戰",
       "event_20220915_cn": "紫絳槿嵐",
       "event_20221124_cn": "鍊金術士與秘密遺跡群島",
-      "event_20221222_cn": "Parallel Superimposition",
+      "event_20221222_cn": "定向折疊",
       "event_20230223_cn": "Revelations of Dust",
       "event_20230525_cn": "Confluence of Nothingness",
-      "event_20230803_cn": "Anthem of Remembrance",
+      "event_20230803_cn": "奏響鳶尾之歌",
       "event_20230817_cn": "The Fools Scales",
       "event_20230914_cn": "Effulgence Before Eclipse",
       "event_20231026_cn": "Tempesta and the Fountain of Youth",
       "event_20231123_cn": "蒼閃忍法帖",
+      "event_20231221_cn": "Light-Chasing Sea of Stars",
       "raid_20200624": "特別演習埃塞克斯級(復刻)",
       "raid_20210708": "復刻穿越彼方的水線",
       "raid_20220127": "演習神秘事件調查",
@@ -732,9 +733,11 @@
       "war_archives_20200806_cn": "archives The Enigma and the Shark",
       "war_archives_20200820_cn": "archives Scherzo of Iron and Blood",
       "war_archives_20200903_cn": "archives Stars of the Shimmering Fjord",
+      "war_archives_20200917_cn": "archives Dreamwakers Butterfly",
       "war_archives_20201029_cn": "archives Universe in Unison",
       "war_archives_20201229_cn": "archives Inverted Orthant",
       "war_archives_20210325_cn": "archives Ashen Simulacrum",
+      "war_archives_20210527_cn": "archives Mirror Involution",
       "war_archives_20210624_cn": "archives Swirling Cherry Blossoms",
       "war_archives_20210819_cn": "archives Microlayer Medley",
       "war_archives_20211014_cn": "archives Crescendo of Polaris",
@@ -1390,6 +1393,26 @@
     "FeedFilter": {
       "name": "餵食過濾器",
       "help": "一般不需要修改"
+    }
+  },
+  "BuyFurniture": {
+    "_info": {
+      "name": "活動傢俱設定",
+      "help": "購買活動中後宅傢俱商城的限時傢俱"
+    },
+    "Enable": {
+      "name": "購買活動傢俱",
+      "help": ""
+    },
+    "BuyOption": {
+      "name": "購買方案",
+      "help": "購買一套：為每個傢俱買一件；購買全部：所有傢俱買到上限。兩種購買方案都會將該套傢俱從傢俱商店最前端移除，若使用購買一套則剩餘傢俱需手動購買，\n兩種方案傢俱消耗差別不大，建議使用購買全部，不會購買鑽石傢俱",
+      "set": "購買一套",
+      "all": "購買全部"
+    },
+    "LastRun": {
+      "name": "上次檢查時間",
+      "help": "記錄上一次檢查的時間以防止任務重複執行，這個數值是自動記錄的，一般不需要修改"
     }
   },
   "Meowfficer": {
